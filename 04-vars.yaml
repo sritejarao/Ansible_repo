@@ -1,0 +1,9 @@
+- name: Print variales in local
+  hosts: local
+  vars:
+    COURSE: DEVOPS
+    DURATION: 120HR
+  tasks:
+  - name: Print vaaribles
+    ansible.builtin.debug:
+      msg: " {{ COURSE }} is a {{ DURATION }}"
