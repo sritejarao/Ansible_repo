@@ -8,8 +8,8 @@
     vars:
       COURSE: "Cloud engineer"
     ansible.builtin.debug:
-      msg: "{{ COURSE}} is {{ DURATION }}"
+      msg: "{{ COURSE}} is {{ Duration }}"
 
   - name: PLAY level var
     ansible.builtin.debug:
-      msg: "{{ COURSE}} is {{ DURATION }}"
+      msg: "{{ COURSE}} is {{ Duration }}"
