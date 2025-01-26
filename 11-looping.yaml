@@ -3,7 +3,7 @@
   tasks:
   - name: looping
     ansible.builtin.debug:
-      msg: "Hello {{iteam}}"
+      msg: "Hello {{ item }}"
     loop:
     - Teja
     - Ram
