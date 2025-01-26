@@ -1,0 +1,9 @@
+- name: Vars from file.
+  hosts: local
+  connection: local
+  vars_files:
+  - Ansible_repo/varsfromfile.yaml
+  tasks:
+  - name: Vars from file.
+  ansible.builtin.debug:
+    msg: "{{ COURSE }} is completed"
