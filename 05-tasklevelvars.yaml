@@ -1,0 +1,15 @@
+- name: tasks level variables
+  hosts: local
+  vars:
+    COURSE: Devops
+    Duration: 120HRS
+  tasks:
+  - name: sub variables
+    vars:
+      COURSE: "Cloud engineer"
+    ansible.builtin.debug:
+      msg: "{{ COURSE}} is {{ DURATION }}"
+
+  - name: PLAY level var
+    ansible.builtin.debug
+      msg: "{{ COURSE}} is {{ DURATION }}"

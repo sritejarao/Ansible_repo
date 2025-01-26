@@ -1,6 +1,6 @@
 - name: Print variales in local
   hosts: local
-  vars:
+  vars:  # Play level variables
     COURSE: DEVOPS
     DURATION: 120HR
   tasks:
