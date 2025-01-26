@@ -11,5 +11,5 @@
       msg: "{{ COURSE}} is {{ DURATION }}"
 
   - name: PLAY level var
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "{{ COURSE}} is {{ DURATION }}"
