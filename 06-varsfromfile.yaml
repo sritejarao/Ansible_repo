@@ -5,5 +5,5 @@
   - Ansible_repo/varsfromfile.yaml
   tasks:
   - name: Vars from file
-  ansible.builtin.debug:
-    msg: "{{ COURSE }} is completed"
+    ansible.builtin.debug:
+      msg: "{{ COURSE }} is completed"
