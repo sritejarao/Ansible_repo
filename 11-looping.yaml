@@ -1,0 +1,9 @@
+- name: looping through list
+  hosts: local
+  tasks:
+  - name: looping
+    ansible.builtin.debug:
+      msg: "Hello {{iteam}}"
+    loop:
+    - Teja
+    - Ram
